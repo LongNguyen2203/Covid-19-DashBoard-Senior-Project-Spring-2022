@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+    
+    <html>
+
+            <head>
+
+                <title>Final Long Nguyen - Covid Dashboard!</title>
+                <script>
+                    //for slideshow
+                    pics = new Array("Step1.png","Step2.png", "Step3.png", "Step4.png", "Step5.png", "Step6.png", "Step7.png", "Step8.png", "Step9.png", "Step10.png")
+    
+                    count = 0; pcount = pics.length;
+                    function npic(){
+                            count++;
+                            if(count < pcount){
+    
+                                document.pic.src=pics[count];
+                            }
+                            else{
+                                count = 0;
+                                document.pic.src = pics[count];
+                            }
+                    }
+                    function ppic (){
+                        count--;
+                        if(count > -1) {
+                            document.pic.src = pics[count];
+                        }
+                        else{
+                            count = pcount - 1;
+                        }
+                    }
+                    //for image preview
+                    
+                        function changePic(imgsrc){
+                            document.getElementById("pic").src = imgsrc;
+                        }
+        
+    
+                </script>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+                <link href="final.css" type="text/css" rel = "stylesheet">
+
+            </head>
+
+            <body>
+                <div style = "background-image: url('th.jpg');
+                background-size: cover; height: 580px; padding-top: 80px;">
+                           <h2>COVID-19 DASHBOARD</h2>
+                            </p>
+                        
+                    </div>
+                   
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://www.stockton.edu/">Stockton</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.hhs.gov/immunization/get-vaccinated/index.html">Get Vaccinated</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/whats-new-all.html">News</a></li>
+                              <li><a class="dropdown-item" href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html">Testing Sites</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Prevention</a></li>
+                            </ul>
+                          </li>
+        
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class = "jumbotron";
+                  style = "background-color: rgb(134, 154, 216);">
+                    <center>
+                                    <h1>Safety slideshow:</h1>         
+
+                                    <img src = "Left_Arrow.webp" height = "100" width = "100" onclick ="ppic()">
+
+                                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/whats-new-all.html"><img src = "COVID-19.webp" name = "pic" height = "550" width = "1000" border = "5"></a>
+                                    
+                                    <img src = "Right_Arrow.webp" height = "100" width = "100" onclick ="npic()">
+                                    <br>
+                                    <br>
+
+                                    
+                                    <div style = "background-color: rgba(129, 186, 219, 0.329);">
+                                <hr>
+                               <b> <p style= "font-size:20px; font-family:courier;">Select the desired option</p></b>
+                                    <a href = "https://www.cdc.gov/coronavirus/2019-ncov/whats-new-all.html" class = "btn btn-primary">News</a>&emsp; &emsp;
+                                    <a href = "https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html" class = "btn btn-primary">Get Tested!</a>&emsp; &emsp;
+                                    <a href = "https://www.hhs.gov/immunization/get-vaccinated/index.html" class = "btn btn-primary">Get Vaccinated!</a>&emsp; &emsp;
+                                    <a href = "https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" class = "btn btn-primary">Prevention Guide</a>&emsp; &emsp;
+                                    <a href = "https://stockton.edu/emergency-management/coronavirus.html" class = "btn btn-primary">Stockton Updates</a> <br>
+                                    <hr>
+                                </div>
+                                    
+                        <div style = "background-color: rgb(199, 193, 104);">
+                                <br>
+                                             
+                    </center>
+                    <div style = "background-color: rgb(147, 196, 220);">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/n9kzHM_0jxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-LKQcbVV5BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nOfzIwMu27I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q5HM0oQmMe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+                    <br>
+                    </div>
+                    <hr>
+                    
+                    <br> <br>
+                    <center>
+                        
+                        <h2>~ STATISTICS ~</h2>
+                        <div style="width:1110px;" class = "alert alert-warning" role = "alert">
+                        <caption><b style = "color:rgb(204, 171, 81)" font-size: 15px, font-family:Verdana,Geneva,sans-serif>This is a USA Covid-19 Statistics table for the current cases as of 5/1/2022</b></caption></div>
+                        <div style="width:1110px;">
+
+                        <table class="table table-bordered">
+                            <tr>
+                                <th rowspan = 1 width = "250">State</th>
+                                <th colspan = 1>Total Cases</th>
+                                <th colspan = 1>New Cases</th>
+                                <th colspan = 1>Total Deaths</th>
+                                <th colspan = 1>Daily Deaths</th>
+                                <th colspan = 1>Total Vaccinations</th>
+                                <th colspan = 1>Total Tests</th>
+                                <th colspan = 1>Total Recovered</th> 
+                                </tr>
+                
+                            <tr>
+                                <th rowspan = 1><a href ="https://experience.arcgis.com/experience/c2ef4a4fcbe5458fbf2e48a21e4fece9">Arkansas</a></th><!--State-->
+                                <td colspan = 1>336,105</td><!--Total Cases-->
+                                <td colspan = 1>+137</td><!--New Cases-->
+                                <td colspan = 1>5,743</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+2</td><!--Daily Deaths-->
+                                <td colspan = 1>1,824,158</td><!--Total Vaccinations-->
+                                <td colspan = 1>3,538,612</td><!--Total Tests-->
+                                <td colspan = 1>328,307</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://public.tableau.com/profile/ca.open.data#!/vizhome/COVID-19CasesDashboardv2_0/CaseStatistics">California</a></th><!--State-->
+                                <td colspan = 1>3,745,486</td><!--Total Cases-->
+                                <td colspan = 1>+1,304</td><!--New Cases-->
+                                <td colspan = 1>61,926</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+61</td><!--Daily Deaths-->
+                                <td colspan = 1>31,185,031</td><!--Total Vaccinations-->
+                                <td colspan = 1>60,514,937</td><!--Total Tests-->
+                                <td colspan = 1>1,993,108</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://covid19.colorado.gov/data">Colorado</a></th><!--State-->
+                                <td colspan = 1>513,765</td><!--Total Cases-->
+                                <td colspan = 1>+961</td><!--New Cases-->
+                                <td colspan = 1>6,449</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>4,549,102</td><!--Total Vaccinations-->
+                                <td colspan = 1>2,920,270</td><!--Total Tests-->
+                                <td colspan = 1>391,235</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://portal.ct.gov/Coronavirus/COVID-19-Data-Tracker">Connecticut</a></th><!--State-->
+                                <td colspan = 1>339,233</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>8,097</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>3,300,234</td><!--Total Vaccinations-->
+                                <td colspan = 1>8,658,768</td><!--Total Tests-->
+                                <td colspan = 1>297,163</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.delaware.gov/">Delaware</a></th><!--State-->
+                                <td colspan = 1>104,909</td><!--Total Cases-->
+                                <td colspan = 1>+288</td><!--New Cases-->
+                                <td colspan = 1>1,626</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>781,165</td><!--Total Vaccinations-->
+                                <td colspan = 1>698,133	</td><!--Total Tests-->
+                                <td colspan = 1>94,750	</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.dc.gov/data">District of Columbia</a></th><!--State-->
+                                <td colspan = 1>47,855</td><!--Total Cases-->
+                                <td colspan = 1>+158</td><!--New Cases-->
+                                <td colspan = 1>1,106</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+1</td><!--Daily Deaths-->
+                                <td colspan = 1>615,530</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,534,712</td><!--Total Tests-->
+                                <td colspan = 1>33,849</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://floridahealthcovid19.gov/">Florida</a></th><!--State-->
+                                <td colspan = 1>2,242,778</td><!--Total Cases-->
+                                <td colspan = 1>+3,841</td><!--New Cases-->
+                                <td colspan = 1>35,269</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+30</td><!--Daily Deaths-->
+                                <td colspan = 1>14,665,875</td><!--Total Vaccinations-->
+                                <td colspan = 1>27,479,075</td><!--Total Tests-->
+                                <td colspan = 1>1,805,359</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://dph.georgia.gov/covid-19-daily-status-report">Georgia</a></th><!--State-->
+                                <td colspan = 1>1,102,789</td><!--Total Cases-->
+                                <td colspan = 1>+1,302</td><!--New Cases-->
+                                <td colspan = 1>20,212</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>6,460,256</td><!--Total Vaccinations-->
+                                <td colspan = 1>8,888,228</td><!--Total Tests-->
+                                <td colspan = 1>920,108</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://health.hawaii.gov/coronavirusdisease2019/">Hawaii</a></th><!--State-->
+                                <td colspan = 1>32,580</td><!--Total Cases-->
+                                <td colspan = 1>+112</td><!--New Cases-->
+                                <td colspan = 1>483</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,252,324</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,451,860</td><!--Total Tests-->
+                                <td colspan = 1>N/A</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.idaho.gov/">Idaho</a></th><!--State-->
+                                <td colspan = 1>187,656</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>2,046</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,098,931</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,451,860</td><!--Total Tests-->
+                                <td colspan = 1>107,255</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.coronavirus.in.gov/">Illinois</a></th><!--State-->
+                                <td colspan = 1>1,339,728</td><!--Total Cases-->
+                                <td colspan = 1>+1,860</td><!--New Cases-->
+                                <td colspan = 1>24,358</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+28	</td><!--Daily Deaths-->
+                                <td colspan = 1>9,642,236</td><!--Total Vaccinations-->
+                                <td colspan = 1>22,822,562</td><!--Total Tests-->
+                                <td colspan = 1>1,215,780</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.coronavirus.in.gov/">Indiana</a></th><!--State-->
+                                <td colspan = 1>722,646</td><!--Total Cases-->
+                                <td colspan = 1>+1,069</td><!--New Cases-->
+                                <td colspan = 1>13,349</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+11</td><!--Daily Deaths-->
+                                <td colspan = 1>4,248,090</td><!--Total Vaccinations-->
+                                <td colspan = 1>9,846,031</td><!--Total Tests-->
+                                <td colspan = 1>684,463</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.iowa.gov/#CurrentStatus">iowa</a></th><!--State-->
+                                <td colspan = 1>395,211</td><!--Total Cases-->
+                                <td colspan = 1>+329</td><!--New Cases-->
+                                <td colspan = 1>5,959</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+7</a></td><!--Daily Deaths-->
+                                <td colspan = 1>2,433,874</td><!--Total Vaccinations-->
+                                <td colspan = 1>4,822,823</td><!--Total Tests-->
+                                <td colspan = 1>347,964</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.coronavirus.kdheks.gov/160/COVID-19-in-Kansas">Kansas</a></th><!--State-->
+                                <td colspan = 1>309,214</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>5,000</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>2,053,596</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,374,998</td><!--Total Tests-->
+                                <td colspan = 1>298,688</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://govstatus.egov.com/kycovid19">Kentucky</a></th><!--State-->
+                                <td colspan = 1>445,139</td><!--Total Cases-->
+                                <td colspan = 1>+368</td><!--New Cases-->
+                                <td colspan = 1>6,517</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+4</td><!--Daily Deaths-->
+                                <td colspan = 1>3,186,682</td><!--Total Vaccinations-->
+                                <td colspan = 1>5,557,161</td><!--Total Tests-->
+                                <td colspan = 1>51,514</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://ldh.la.gov/Coronavirus/">Louisiana</a></th><!--State-->
+                                <td colspan = 1>458,581</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>10,382</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>2,710,055</td><!--Total Vaccinations-->
+                                <td colspan = 1>7,018,350</td><!--Total Tests-->
+                                <td colspan = 1>N/A</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus/index.shtml">Maine</a></th><!--State-->
+                                <td colspan = 1>61,847</td><!--Total Cases-->
+                                <td colspan = 1>+231</td><!--New Cases-->
+                                <td colspan = 1>789</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,200,802</td><!--Total Vaccinations-->
+                                <td colspan = 1>2,421,609</td><!--Total Tests-->
+                                <td colspan = 1>N/A</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.maryland.gov/">Maryland</a></th><!--State-->
+                                <td colspan = 1>448,989</td><!--Total Cases-->
+                                <td colspan = 1>+649</td><!--New Cases-->
+                                <td colspan = 1>8,776</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+12	</td><!--Daily Deaths-->
+                                <td colspan = 1>4,886,821</td><!--Total Vaccinations-->
+                                <td colspan = 1>9,754,953</td><!--Total Tests-->
+                                <td colspan = 1>10,237</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.mass.gov/info-details/covid-19-response-reporting">Massachusetts</a></th><!--State-->
+                                <td colspan = 1>691,172</td><!--Total Cases-->
+                                <td colspan = 1>+893</td><!--New Cases-->
+                                <td colspan = 1>17,621</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+4</td><!--Daily Deaths-->
+                                <td colspan = 1>6,365,033</td><!--Total Vaccinations-->
+                                <td colspan = 1>21,509,976</td><!--Total Tests-->
+                                <td colspan = 1>649,447</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html">Michigan</a></th><!--State-->
+                                <td colspan = 1>940,175</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>18,893</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>7,281,555</td><!--Total Vaccinations-->
+                                <td colspan = 1>13,509,456</td><!--Total Tests-->
+                                <td colspan = 1>660,124</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.health.state.mn.us/diseases/coronavirus/situation.html">Minnesota</a></th><!--State-->
+                                <td colspan = 1>579,235</td><!--Total Cases-->
+                                <td colspan = 1>+1,711</td><!--New Cases-->
+                                <td colspan = 1>7,238</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+6</td><!--Daily Deaths-->
+                                <td colspan = 1>4,475,535</td><!--Total Vaccinations-->
+                                <td colspan = 1>9,306,211</td><!--Total Tests-->
+                                <td colspan = 1>557,099</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi">Mississippi</a></th><!--State-->
+                                <td colspan = 1>311,900</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>7,199</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,591,895</td><!--Total Vaccinations-->
+                                <td colspan = 1>2,703,122</td><!--Total Tests-->
+                                <td colspan = 1>300,323</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/">Missouri</a></th><!--State-->
+                                <td colspan = 1>586,664	</td><!--Total Cases-->
+                                <td colspan = 1>+991</td><!--New Cases-->
+                                <td colspan = 1>9,387</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>4,062,200</td><!--Total Vaccinations-->
+                                <td colspan = 1>6,966,987</td><!--Total Tests-->
+                                <td colspan = 1>518,405</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b">Montana</a></th><!--State-->
+                                <td colspan = 1>109,030</td><!--Total Cases-->
+                                <td colspan = 1>+45</td><!--New Cases-->
+                                <td colspan = 1>1,574</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>772,832</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,220,873</td><!--Total Tests-->
+                                <td colspan = 1>106,351</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd/page/page_0/">Nebraska</a></th><!--State-->
+                                <td colspan = 1>220,127</td><!--Total Cases-->
+                                <td colspan = 1>+95</td><!--New Cases-->
+                                <td colspan = 1>2,245</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,439,421</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,041,491</td><!--Total Tests-->
+                                <td colspan = 1>170,504</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://nvhealthresponse.nv.gov/">Nevada</a></th><!--State-->
+                                <td colspan = 1>315,438</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>5,464</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>2,097,373</td><!--Total Vaccinations-->
+                                <td colspan = 1>3,183,335</td><!--Total Tests-->
+                                <td colspan = 1>292,539</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.covid19.nh.gov/">New Hampshire</a></th><!--State-->
+                                <td colspan = 1>95,377</td><!--Total Cases-->
+                                <td colspan = 1>+214</td><!--New Cases-->
+                                <td colspan = 1>1,305</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+1</td><!--Daily Deaths-->
+                                <td colspan = 1>1,151,253</td><!--Total Vaccinations-->
+                                <td colspan = 1>2,180,758</td><!--Total Tests-->
+                                <td colspan = 1>91,830</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml">New Jersey</a></th><!--State-->
+                                <td colspan = 1>1,000,010</td><!--Total Cases-->
+                                <td colspan = 1>+1,198</td><!--New Cases-->
+                                <td colspan = 1>25,600</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+12</td><!--Daily Deaths-->
+                                <td colspan = 1>7,430,120</td><!--Total Vaccinations-->
+                                <td colspan = 1>13,533,867</td><!--Total Tests-->
+                                <td colspan = 1>781,536</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://cvprovider.nmhealth.org/public-dashboard.html">New Mexico</a></th><!--State-->
+                                <td colspan = 1>197,733</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>4,067</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>1,835,230</td><!--Total Vaccinations-->
+                                <td colspan = 1>3,274,367</td><!--Total Tests-->
+                                <td colspan = 1>178,593	</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&%3Atoolbar=no&%3Atabs=n">New York</a></th><!--State-->
+                                <td colspan = 1>2,102,272</td><!--Total Cases-->
+                                <td colspan = 1>+2,950</td><!--New Cases-->
+                                <td colspan = 1>52,616</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+45</td><!--Daily Deaths-->
+                                <td colspan = 1>15,980,527</td><!--Total Vaccinations-->
+                                <td colspan = 1>51,635,592</td><!--Total Tests-->
+                                <td colspan = 1>1,504,008</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://covid19.ncdhhs.gov/dashboard">North Carolina</a></th><!--State-->
+                                <td colspan = 1>969,752</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>12,651</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>7,168,548</td><!--Total Vaccinations-->
+                                <td colspan = 1>12,413,011</td><!--Total Tests-->
+                                <td colspan = 1>924,490</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases">North Dakota</a></th><!--State-->
+                                <td colspan = 1>107,708</td><!--Total Cases-->
+                                <td colspan = 1>+69</td><!--New Cases-->
+                                <td colspan = 1>1,494</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>567,228</td><!--Total Vaccinations-->
+                                <td colspan = 1>431,155</td><!--Total Tests-->
+                                <td colspan = 1>105,184</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards/key-metrics/cases">Ohio</a></th><!--State-->
+                                <td colspan = 1>1,075,004</td><!--Total Cases-->
+                                <td colspan = 1>+985</td><!--New Cases-->
+                                <td colspan = 1>19,284</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>8,530,342</td><!--Total Vaccinations-->
+                                <td colspan = 1>12,488,553</td><!--Total Tests-->
+                                <td colspan = 1>1,022,662</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://oklahoma.gov/covid19.html">Oklahoma</a></th><!--State-->
+                                <td colspan = 1>448,305</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>6,788</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>2,715,800</td><!--Total Vaccinations-->
+                                <td colspan = 1>4,021,301</td><!--Total Tests-->
+                                <td colspan = 1>431,154</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://govstatus.egov.com/OR-OHA-COVID-19">Oregon</a></th><!--State-->
+                                <td colspan = 1>186,344</td><!--Total Cases-->
+                                <td colspan = 1>+747</td><!--New Cases-->
+                                <td colspan = 1>2,501</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+3</td><!--Daily Deaths-->
+                                <td colspan = 1>562,442</td><!--Total Vaccinations-->
+                                <td colspan = 1>3,137,471</td><!--Total Tests-->
+                                <td colspan = 1>158,162	</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx">Pennsylvania</a></th><!--State-->
+                                <td colspan = 1>1,161,184</td><!--Total Cases-->
+                                <td colspan = 1>+2,220</td><!--New Cases-->
+                                <td colspan = 1>26,385</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+20</td><!--Daily Deaths-->
+                                <td colspan = 1>10,297,139</td><!--Total Vaccinations-->
+                                <td colspan = 1>13,087,428</td><!--Total Tests-->
+                                <td colspan = 1>1,027,153</td><!--Total Recovered-->
+                            </tr>
+
+                            <tr>
+                                <th rowspan = 1><a href ="https://ri-department-of-health-covid-19-data-rihealth.hub.arcgis.com/">Rhode Island</a></th><!--State-->
+                                <td colspan = 1>148,186</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>2,671	</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>934,703</td><!--Total Vaccinations-->
+                                <td colspan = 1>4,019,021</td><!--Total Tests-->
+                                <td colspan = 1>8,909</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://scdhec.gov/covid19/sc-testing-data-projections-covid-19">South Carolina</a></th><!--State-->
+                                <td colspan = 1>580,273</td><!--Total Cases-->
+                                <td colspan = 1>+717</td><!--New Cases-->
+                                <td colspan = 1>9,520</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+14</td><!--Daily Deaths-->
+                                <td colspan = 1>3,299,001</td><!--Total Vaccinations-->
+                                <td colspan = 1>7,457,939</td><!--Total Tests-->
+                                <td colspan = 1>N/A</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://doh.sd.gov/COVID/">South Dakota</a></th><!--State-->
+                                <td colspan = 1>122,660</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>1,967</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>711,253</td><!--Total Vaccinations-->
+                                <td colspan = 1>466,373	</td><!--Total Tests-->
+                                <td colspan = 1>119,069</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.tn.gov/health/cedep/ncov.html">Tennessee</a></th><!--State-->
+                                <td colspan = 1>847,430</td><!--Total Cases-->
+                                <td colspan = 1>0</td><!--New Cases-->
+                                <td colspan = 1>12,197</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>4,095,246</td><!--Total Vaccinations-->
+                                <td colspan = 1>28,516,058</td><!--Total Tests-->
+                                <td colspan = 1>2,761,113</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://txdshs.maps.arcgis.com/apps/dashboards/ed483ecd702b4298ab01e8b9cafc8b83">Texas</a></th><!--State-->
+                                <td colspan = 1>2,901,996</td><!--Total Cases-->
+                                <td colspan = 1>+1,167</td><!--New Cases-->
+                                <td colspan = 1>50,536</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+18</td><!--Daily Deaths-->
+                                <td colspan = 1>19,205,116</td><!--Total Vaccinations-->
+                                <td colspan = 1>28,516,058</td><!--Total Tests-->
+                                <td colspan = 1>2,761,113</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://coronavirus.utah.gov/case-counts/">Utah</a></th><!--State-->
+                                <td colspan = 1>398,012</td><!--Total Cases-->
+                                <td colspan = 1>+279</td><!--New Cases-->
+                                <td colspan = 1>2,204</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+1</td><!--Daily Deaths-->
+                                <td colspan = 1>2,167,913</td><!--Total Vaccinations-->
+                                <td colspan = 1>4,662,527</td><!--Total Tests-->
+                                <td colspan = 1>387,585</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.healthvermont.gov/covid-19/current-activity">Vermont</a></th><!--State-->
+                                <td colspan = 1>23,126</td><!--Total Cases-->
+                                <td colspan = 1>+94</td><!--New Cases-->
+                                <td colspan = 1>247</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>580,936</td><!--Total Vaccinations-->
+                                <td colspan = 1>1,591,852</td><!--Total Tests-->
+                                <td colspan = 1>20,493</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.vdh.virginia.gov/coronavirus/">Virginia</a></th><!--State-->
+                                <td colspan = 1>661,314</td><!--Total Cases-->
+                                <td colspan = 1>+761</td><!--New Cases-->
+                                <td colspan = 1>10,791</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+14</td><!--Daily Deaths-->
+                                <td colspan = 1>6,826,662</td><!--Total Vaccinations-->
+                                <td colspan = 1>9,276,365</td><!--Total Tests-->
+                                <td colspan = 1>54,717</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard">Washington</a></th><!--State-->
+                                <td colspan = 1>407,052</td><!--Total Cases-->
+                                <td colspan = 1>+144</td><!--New Cases-->
+                                <td colspan = 1>5,563</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>5,983,715</td><!--Total Vaccinations-->
+                                <td colspan = 1>6,548,773</td><!--Total Tests-->
+                                <td colspan = 1>191,723</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://dhhr.wv.gov/COVID-19/Pages/default.aspx">West Virginia</a></th><!--State-->
+                                <td colspan = 1>153,918</td><!--Total Cases-->
+                                <td colspan = 1>+420</td><!--New Cases-->
+                                <td colspan = 1>2,686</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+7</td><!--Daily Deaths-->
+                                <td colspan = 1>1,185,698</td><!--Total Vaccinations-->
+                                <td colspan = 1>2,735,731</td><!--Total Tests-->
+                                <td colspan = 1>143,759</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://www.dhs.wisconsin.gov/outbreaks/index.htm">Wisconsin</a></th><!--State-->
+                                <td colspan = 1>599,227</td><!--Total Cases-->
+                                <td colspan = 1>+405</td><!--New Cases-->
+                                <td colspan = 1>6,839</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>4,741,771</td><!--Total Vaccinations-->
+                                <td colspan = 1>3,453,607</td><!--Total Tests-->
+                                <td colspan = 1>583,357</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/covid-19-map-and-statistics/">Wyoming</a></th><!--State-->
+                                <td colspan = 1>58,142</td><!--Total Cases-->
+                                <td colspan = 1>+144</td><!--New Cases-->
+                                <td colspan = 1>707</td><!--Total Deaths-->
+                                <td colspan = 1>0</td><!--Daily Deaths-->
+                                <td colspan = 1>358,512</td><!--Total Vaccinations-->
+                                <td colspan = 1>726,048</td><!--Total Tests-->
+                                <td colspan = 1>56,955</td><!--Total Recovered-->
+                            </tr>
+                            <tr>
+                                <th rowspan = 1><a href ="https://covidactnow.org/us/puerto_rico-pr/?s=1805723">Puerto Rico</a></th><!--State-->
+                                <td colspan = 1>249,468</td><!--Total Cases-->
+                                <td colspan = 1>+1,173</td><!--New Cases-->
+                                <td colspan = 1>2,313</td><!--Total Deaths-->
+                                <td colspan = 1 style= background-color:rgb(221,62,62)>+3</td><!--Daily Deaths-->
+                                <td colspan = 1>1,235,300</td><!--Total Vaccinations-->
+                                <td colspan = 1>464,073</td><!--Total Tests-->
+                                <td colspan = 1>107,729</td><!--Total Recovered-->
+                                </tr>
+                            <tr>
+                                <th rowspan = 1>TOTAL</th><!--State-->
+                                <th colspan = 1 style= background-color:rgb(90,198,218)>32,807,080</th><!--Total Cases-->
+                                <th colspan = 1 style= background-color:rgb(90,198,218)>30845</th><!--New Cases-->
+                                <th colspan = 1 style= background-color:rgb(221,62,62)>582,758</th><!--Total Deaths-->
+                                <th colspan = 1 style= background-color:rgb(221,62,62)>306</th><!--Daily Deaths-->
+                                <th colspan = 1 style= background-color:rgb(56,170,85)>240,092,875</th><!--Total Vaccinations-->
+                                <th colspan = 1 style= background-color:rgb(90,198,218)>467,980,927</th><!--Total Tests-->
+                                <th colspan = 1 style= background-color:rgb(56,170,85)>26,725,241</th><!--Total Recovered-->
+                            </tr>
+
+                            
+                        </table>
+                        <div class = "alert alert-warning" role = "alert"
+                        style = "background-color: rgb(229, 226, 180);">This table does not include federal prisons, US military and various territories. </div>
+                    </div>
+                   
+                    <hr>
+                            <br>
+                            
+                        
+
+                            <img src = "graph1.gif" title= "Graph Selection" height = "700" width = "900" border = "3" id = "pic">
+
+                                <img src = "graph1.gif" id = "TCases" title = "Total Cases Graph" height = "100" width = "100" border = "2" onclick="changePic('graph1.gif')">
+                                <img src = "casesdeath.jpg" id = "TDeaths" title = "Deaths Graph"  height = "100" width = "100" border = "2" onclick="changePic('casesdeath.jpg')">
+                                <img src = "map.jpg" id = "TVac" title = "Vaccinations Graph" height = "100" width = "100" border = "2" onclick="changePic('map.jpg')">
+
+                    </center>
+                    <img src = "Vaccine.png">
+                    <img src = "test.png"height = "200" width = "1000">
+                    <footer align = "center"><b>© All Rights Reserved  -  Stockton University   -   Long Nguyen </b></footer>
+            </body>
+
+
+    </html>
